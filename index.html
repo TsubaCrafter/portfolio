@@ -1,1 +1,131 @@
-
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="header.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<!--ヘッダーメニュー-->
+		<header>
+			<div class="header-menu">
+				<a class="title" href="#">TSUBASA YAMAGUCHI</a>
+				<div id="header-sns">
+					<a href="https://twitter.com/tsubacrafter" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+					<a href="https://note.com/tsubasuchan" target="_blank"><img src="img/note.png" alt="note"></a>
+					<a href="https://github.com/TsubaCrafter" target="_blank"><img src="img/github.png" alt="github"></a>
+					<a href="https://www.instagram.com/tsubasu_chan/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+					<a href="https://www.tiktok.com/@tsubasa06090" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a>
+				</div>
+				<nav class="nav">
+					<ul class="menu-group">
+						<li class="menu-item"><a href="#about">ABOUT</a></li>
+						<li class="menu-item"><a href="#activities">ACTIVITIES</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--モバイル用ヘッダー-->
+		<div id="header">
+			<div class="navtext-container">
+				<a href="#" class="navtext">TSUBASA YAMAGUCHI</a>
+			</div>
+			<input type="checkbox" class="menu-btn" id="menu-btn">
+			<label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li id="btn-about"><a href="#about">ABOUT</a></li>
+				<li id="btn-activities"><a href="#activities">ACTIVITIES</a></li>
+				<li id="btn">
+					<a href="https://twitter.com/tsubacrafter" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+					<a href="https://note.com/tsubasuchan" target="_blank"><img src="img/note.png" alt="note"></a>
+					<a href="https://github.com/TsubaCrafter" target="_blank"><img src="img/github.png" alt="github"></a>
+					<a href="https://www.instagram.com/tsubasu_chan/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+					<a href="https://www.tiktok.com/@tsubasa06090" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a>
+				</li>
+			</ul>
+	</div>
+		<!--メイン画面-->
+		<section id="main" class="main">
+			<!--タイトルネーム画面-->
+			<div class="main-name">
+				<h1>
+					TSUBASA YAMAGUCHI
+					<br>
+					PORTFOLIO
+				</h1>
+				<!--SNSコード-->
+				<div class="main-sns">
+					<a href="https://twitter.com/tsubacrafter" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+					<a href="https://note.com/tsubasuchan" target="_blank"><img src="img/note.png" alt="note"></a>
+					<a href="https://github.com/TsubaCrafter" target="_blank"><img src="img/github.png" alt="github"></a>
+					<a href="https://www.instagram.com/tsubasu_chan/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+					<a href="https://www.tiktok.com/@tsubasa06090" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a>
+				</div>
+			</div>
+			<!--ページの内容-->
+			<div class="main-list">
+				<!--ABOUTのコード-->
+				<div class="about" id="about">
+					<h1>ABOUT</h1>
+					<hr color="#545454" size="1" noshade>
+					<h2>山口 翼 － Yamaguchi Tsubasa</h2>
+					<p>
+						2006年、沖縄県生まれ高校などは行っていなく家で電子工作やアプリ開発、
+						音楽などやっております。
+						<br>
+						僕はゲームも好きでよくネットやゲーム内で知り合った仲間たちと一緒にプレイしています。
+						<br>
+						特に、
+						<a href="https://www.minecraft.net/ja-jp" target="_blank">Minecraft</a>
+						というゲームをよくやりまして、2020年の
+						<a href="https://minecraftcup.com/" target="_blank">MinecraftCup</a>
+						という大会に出場し、そこで最優秀賞を取りました。
+						<br>
+						今はいろいろと挑戦したく2022年の1月21日では沖縄一周を自転車でしました。
+						今度は日本一周を自転車で計画中です。
+						<br>
+					</p>
+				</div>
+				<div class="activities" id="activities">
+					<h1>ACTIVITIES</h1>
+					<hr color="#545454" size="1" noshade>
+				</div>
+				<div class="contact">
+					<h1>CONTACT</h1>
+					<hr color="#545454" size="1" noshade>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>@2022 Tsubasa Yamaguchi</p>
+		</footer>
+	</body>
+	<script>
+		//２６０までスクロールするとヘッダーのSNSが表示される
+		(function() {
+			var sns = document.getElementById('header-sns');
+			window.addEventListener('scroll', () => {
+				if (window.pageYOffset > 260) {
+					sns.classList.add('is-show');
+				} else {
+					sns.classList.remove('is-show');
+				}
+			});
+		}());
+		
+		//ハンバーガーメニューを選んだ後にハンバーガーメニューが閉じる
+		function buttonClick() {
+			document.querySelector(`input[type='checkbox'][class='menu-btn'][id='menu-btn']`).checked = false;
+		}
+		var about_btn = document.getElementById('btn-about');
+		var activities_btn = document.getElementById('btn-activities');
+		about_btn.onclick = buttonClick;
+		activities_btn.onclick = buttonClick;
+		
+		//メイン画面をクリックするとハンバーガーメニューが閉じる
+		var mainclick = document.getElementById('main');
+		mainclick.addEventListener('click', () => {
+			document.querySelector(`input[type='checkbox'][class='menu-btn'][id='menu-btn']`).checked = false;
+		}, false);
+	</script>
+</html>

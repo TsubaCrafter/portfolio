@@ -1,0 +1,191 @@
+body {
+	margin:0;
+	background-color: #f8f8ff;
+}
+/* ヘッダーのコード*/
+header {
+	position: fixed;
+	top: 0;
+	width:100%;
+	height: 60px;
+	align-items: center;
+	font-family:cursive;
+	font-weight: bold;
+}
+.header-menu {
+	display: flex;
+	align-items: center;
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #f8f8ff;
+}
+/*ヘッダー名前のコード*/
+.title {
+	margin:10px;
+	margin-right:auto;
+	font-size: 14px;
+	color: #545454;
+	text-decoration: none;
+}
+.title:hover {
+	color:#a9a9a9;
+}
+#header-sns {
+	display:none;
+	text-align: center;
+	margin-right:auto;
+}
+#header-sns img {
+	height:25px;
+	margin-left:1.5vw;
+	margin-right:1.5vw;
+	display:inline-block;
+}
+#header-sns img:hover {
+	opacity: 0.2;
+}
+#header-sns.is-show {
+	display:block;
+}
+/*ヘッダーメニューのコード*/
+.menu-group {
+	margin:10px;
+	padding:0;
+}
+.menu-item {
+	list-style: none;
+	display: inline-block;
+	margin: 2px;
+	font-size: 13px;
+}
+.menu-item a {
+	color: #545454;
+	text-decoration: none;
+}
+.menu-item a:hover {
+	color:#a9a9a9;
+}
+/*メイン画面*/
+.main {
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	list-style:none;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline-grid;
+}
+/*メイン画面のタイトルコード*/
+.main-name {
+	width:100%;
+	height:60%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	text-align:center;
+	margin-bottom:120px;
+}
+.main-name h1 {
+	color:#545454;
+	font-family:Palatino Linotype;
+	font-size:50px;
+	border-bottom:2px solid gray;
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+/*SNSのコード*/
+.main-sns {
+	width:100%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main-sns img {
+	height:50px;
+	margin-right:20px;
+	margin-left:20px;
+	display:inline-block;
+}
+.main-sns img:hover {
+	opacity: 0.2;
+}
+/*メイン内容画面のコード*/
+.main-list h1 {
+	font-size:30px;
+	color:#545454;
+	text-align:left;
+	font-family:cursive;
+	margin-bottom:1px;
+}
+.main-list p {
+	font-family:Yu Gothic;
+	font-size:18px;
+	font-weight: bold;
+	color:#545454;
+}
+/*ABOUT内容の画面コード*/
+.about {
+	padding-top:20px;
+}
+.about h2 {
+	font-family:Yu Gothic;
+	color:#545454;
+}
+.about a {
+	color:#545454;
+}
+.about a:hover {
+	color:#a9a9a9;
+}
+.activities {
+	padding-top:20px;
+	margin-bottom:1000px;
+}
+.contact {
+}
+footer {
+	background-color:#545454;
+	color:#f8f8ff;
+	padding: 50;
+	text-align:center;
+	margin-top:40px;
+}
+@media screen and ( max-width:630px) {
+	header {
+		display:none;
+	}
+	.main-name {
+		margin-top:15%;
+		height:30%;
+	}
+	.main-name h1 {
+		font-size:30px;
+	}
+	.main-sns img {
+		height:8vw;
+		margin-right:3vw;
+		margin-left:3vw;
+		display:inline-block;
+	}
+	.main-list h1 {
+		font-size:20px;
+	}
+	.main-list h2 {
+		font-size:20px;
+	}
+	.main-list p {
+		font-family:Yu Gothic;
+		font-size:15px;
+		font-weight: bold;
+		color:#545454;
+	}
+	.about {
+		padding-top:30px;
+	}
+	.activities {
+		padding-top:30px;
+	}
+}
