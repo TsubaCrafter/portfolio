@@ -114,35 +114,3 @@ body {
 	}
 	100% { opacity: 0 }
 }
-.memorys {
-	width:100%;
-	height:1000px;
-}
-.memorys img {
-	position:absolute;
-	width:auto;
-	height:100px;
-	z-index:0;
-	top:1500px;
-	left:50;
-	animation: memory-anime 30s 0s infinite;
-}
-@keyframes memory-anime {
-	0% {
-		top:1500px;
-		opacity:0;
-	}
-	8% {
-		opacity: 1;
-	}
-	17% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-		top:1000px;
-		z-index:1;
-	}
-	100% { opacity: 0 }
-}
-}
