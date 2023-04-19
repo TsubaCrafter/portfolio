@@ -31,12 +31,23 @@ body {
 	max-width:70vw;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:2px solid #ffffff;
 	margin-top:0;
 	margin-bottom:10px;
+	border-bottom:2px solid #ffffff;
+}
+.delivery h3 {
+	color:#ffffff;
+	font-size:2vw;
+	margin-top:40px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:30vw;
+	border-bottom:2px solid #ffffff;
 }
 /*SNSのコード*/
 .slider-sns {
+	display: inline-block;
 	width:100%;
 	text-align: center;
 	margin-left:auto;
